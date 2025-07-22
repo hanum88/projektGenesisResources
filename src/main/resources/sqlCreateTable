@@ -31,7 +31,7 @@ CREATE TABLE `Users` (
   PRIMARY KEY (`ID`),
   UNIQUE KEY `PersonID_UNIQUE` (`PersonID`),
   UNIQUE KEY `Uuid_UNIQUE` (`Uuid`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=cp1250;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=cp1250;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,12 +40,9 @@ CREATE TABLE `Users` (
 
 LOCK TABLES `Users` WRITE;
 /*!40000 ALTER TABLE `Users` DISABLE KEYS */;
+INSERT INTO `Users` VALUES (1,'John','Saviour','jXa4g3H7oPq2','14a74712-3fed-4235-9137-1d61383d2b4d'),(2,'Milan','Milý','yB9fR6tK0wLm','4f93dea4-21d6-430e-b50c-9c2cff1806bc'),(3,'Radim','Mušálek','cN1vZ8pE5sYx','54c948ab-ffa9-439c-93e9-d7449f8ceeb0');
 /*!40000 ALTER TABLE `Users` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'data'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -56,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-17 20:07:08
+-- Dump completed on 2025-07-22 20:17:50
